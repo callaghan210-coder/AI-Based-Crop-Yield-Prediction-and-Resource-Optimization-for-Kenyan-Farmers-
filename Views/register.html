@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <title>Register - Crop Yield Prediction</title>
+</head>
+<body class="register-body">
+    <div class="form-container">
+        <h2>Register for Crop Yield Prediction</h2>
+        <img src="/images/register.jpg" alt="Agricultural field" class="form-image">
+        <form id="registerForm" action="/register" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <small id="usernameError" class="error-message"></small>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <small id="passwordError" class="error-message"></small>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+            <small id="confirmPasswordError" class="error-message"></small>
+
+            <button type="submit" class="btn-green">Register</button>
+        </form>
+    </div>
+</body>
+</html>
